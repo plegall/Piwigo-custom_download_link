@@ -1,0 +1,1 @@
+Add a specific download button on the page of the photo

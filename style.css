@@ -1,0 +1,33 @@
+#customDownloadLink {
+  margin:10px;
+}
+
+#customDownloadLink {
+    background-color: #222222;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing:1px;
+    line-height: 50px;
+    margin: 10px auto;
+    width: 300px;
+}
+
+#customDownloadLink img {
+    border:none;
+    margin:0;
+    margin-bottom:-10px;
+}
+
+#customDownloadLink a {
+    color:#ddd;
+    border:none;
+    text-decoration:none;
+}
+
+#customDownloadLink a:hover {
+    color:#fff;
+    border:none;
+    text-decoration:none;
+}
