@@ -1,0 +1,1 @@
+Dodaje specjalny przycisk pobierania na stronie ze zdjęciem.
