@@ -1,0 +1,1 @@
+Adicionar um botão de baixar arquivo específico na página da foto
