@@ -1,0 +1,1 @@
+Tilføjer en downloadknap på fotografiets side.
