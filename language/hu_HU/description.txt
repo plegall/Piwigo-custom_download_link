@@ -1,0 +1,1 @@
+A fénykép oldalára helyez egy "letöltés" gombot.
