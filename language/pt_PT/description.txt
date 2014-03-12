@@ -1,0 +1,1 @@
+Adicionar, na página da foto, um botão específico para a descarregar.
