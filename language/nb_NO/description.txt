@@ -1,0 +1,1 @@
+Legg til en bestemt nedlastingsknapp på siden til bildet
