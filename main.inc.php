@@ -37,15 +37,28 @@ function cdl_add_link_prefilter($content, &$smarty)
 
   $custom_link_tpl = '<div id="customDownloadLink"><a href="{$CDL_LINK}" rel="nofollow"><img src="plugins/custom_download_link/download_white_32.png"> {\'Download Photo\'|@translate}</a></div>{combine_css path="plugins/custom_download_link/style.css"}';
   
+  if (isset($conf['custom_download_link_position']))
+  {
+    if ('properties-after' == $conf['custom_download_link_position'])
+    {
+      $search = '#</dl>#';
+      $replace = '</dl>'.$custom_link_tpl;
+
+      return preg_replace($search, $replace, $content, 1);
+    }
+
+    if ('properties-before' == $conf['custom_download_link_position'])
+    {
+      $search = '<dl id="standard"';
+      $replace = $custom_link_tpl.$search;
+
+      return str_replace($search, $replace, $content);
+    }
+  }
+  
   $search = '{$ELEMENT_CONTENT}';
   $replace = '{$ELEMENT_CONTENT}'.$custom_link_tpl;
 
-  if (isset($conf['custom_download_link_position']) and 'properties' == $conf['custom_download_link_position'])
-  {
-    $search = '<dl id="standard"';
-    $replace = $custom_link_tpl.$search;
-  }
-  
   return str_replace($search, $replace, $content);
 }
 ?>
