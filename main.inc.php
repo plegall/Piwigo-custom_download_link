@@ -29,6 +29,11 @@ function cdl_add_link()
     return;
   }
 
+  if (isset($picture['current']['is_gvideo']) and $picture['current']['is_gvideo'])
+  {
+    return;
+  }
+
   load_language('plugin.lang', PHPWG_PLUGINS_PATH . basename(dirname(__FILE__)) . '/');
   load_language('lang', PHPWG_ROOT_PATH.PWG_LOCAL_DIR, array('no_fallback'=>true, 'local'=>true) );
 
