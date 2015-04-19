@@ -1,0 +1,1 @@
+Přidá specifické tlačítko pro stažení fotky na stránku fotografie.
