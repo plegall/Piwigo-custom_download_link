@@ -1,0 +1,1 @@
+Afegeix a la pàgina de la foto un botó específic per poder descarregar la foto.
