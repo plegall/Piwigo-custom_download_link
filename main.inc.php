@@ -50,7 +50,7 @@ function cdl_add_link()
   $template->assign('CDL_LINK', get_action_url($picture['current']['id'], 'e', true));
 }
 
-function cdl_add_link_prefilter($content, &$smarty)
+function cdl_add_link_prefilter($content)
 {
   global $conf;
 
